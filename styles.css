@@ -1,0 +1,12 @@
+:root {
+  --bg: #05070a;
+  --gold: #d4af37;
+  --text: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
