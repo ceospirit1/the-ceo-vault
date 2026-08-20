@@ -1,12 +1,79 @@
 :root {
-  --bg: #05070a;
-  --gold: #d4af37;
-  --text: #ffffff;
+    --bg: #050505;
+    --gold: #d4af37;
+    --green: #00c896;
+    --text: #ffffff;
+    --card: #111111;
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: var(--gold);
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #aaa;
+    font-size: 18px;
+}
+
+
+.vault-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+
+.card {
+    background: var(--card);
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 30px;
+    transition: .3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+
+
+.card h2 {
+    color: var(--gold);
+}
+
+
+.card p {
+    color: #bbb;
+}
+
+
+button {
+    background: var(--green);
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: var(--gold);
 }
