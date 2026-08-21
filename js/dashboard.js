@@ -111,7 +111,7 @@ const Dashboard = {
   },
 
   render() {
-    const state = VaultState.getState();
+    const state = VaultState.state;
     const user = state.user;
 
     // Synchronize active tab in UI
