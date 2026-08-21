@@ -112,7 +112,7 @@ const Dashboard = {
 
   render() {
     const state = VaultState.state;
-    const user = state.user;
+    const state = VaultState;
 
     // Synchronize active tab in UI
     this.switchTab(state.activeTab || 'builds');
